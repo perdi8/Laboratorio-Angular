@@ -1,0 +1,45 @@
+<div id="container">
+  <div class="form-container">
+    <form
+      id="login-form"
+      class="form"
+      name="editForm"
+      role="form"
+      (submit)="submitLogin($event)"
+      [formGroup]="loginForm"
+    >
+      <div class="card-border">
+        <div class="card-body">
+          Login
+          <div class="input-container">
+            <input
+              class="input"
+              name="username"
+              placeholder="Usuario o correo electronico"
+              formControlName="username"
+            />
+            <div *ngIf="loginForm.get('username').errors && loginForm.get('username').touched && loginForm.get('username').invalid">
+              <div class="error">Campo obligatorio</div>
+            </div>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              placeholder="Contraseña"
+              class="input"
+              name="password"
+              formControlName="password"
+            />
+              <div *ngIf="loginForm.get('password').errors && loginForm.get('password').touched">
+              <div *ngIf= "loginForm.get('password').hasError('required')" class="error">Campo obligatorio</div>
+
+            </div>
+          </div>
+          <div class="button-container">
+            <input type="submit" value="ENTRAR" class="send-button" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

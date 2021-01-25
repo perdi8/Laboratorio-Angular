@@ -1,0 +1,81 @@
+.toolbar {
+  background-color: teal;
+  height: 50px;
+  width: auto;
+}
+
+.logo {
+  padding-right: 20px;
+}
+
+.name-logo {
+  font-size: 15px;
+}
+
+.home {
+  position: relative;
+  left: 350px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.login {
+  position: relative;
+  left: 450px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.about {
+  border-radius: 6px;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.dashboard {
+  position: relative;
+  left: 250px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.crud {
+  position: relative;
+  left: 470px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.galery {
+  position: relative;
+  left: 450px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.profile {
+  position: relative;
+  left: 530px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.usuario {
+  border-radius: 6px;
+  position: relative;
+  left: 700px;
+  padding: 5px;
+  color: greenyellow;
+  font-size: 15px;
+}
+
+.logout {
+  border: 2px solid greenyellow;
+  border-radius: 6px;
+  position: relative;
+  left: 770px;
+  padding: 2px;
+  font-size: 15px;
+}

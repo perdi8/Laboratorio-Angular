@@ -1,0 +1,70 @@
+<mat-toolbar class="toolbar" color="primary">
+  <img
+    src="../../../../../assets/angular.png"
+    alt=""
+    class="logo"
+    width="40px"
+  />
+  <span class="name-logo">My Angular Application</span>
+  <span
+    *ngIf="privateMenu != true"
+    routerLink="home"
+    class="home"
+    style="cursor: pointer"
+    >Home</span
+  >
+  <span
+    *ngIf="privateMenu != true"
+    routerLink="login"
+    class="login"
+    style="cursor: pointer"
+    >Login</span
+  >
+  <span
+    *ngIf="privateMenu != true"
+    routerLink="about"
+    class="about"
+    style="cursor: pointer"
+    >About</span
+  >
+
+  <span
+    *ngIf="privateMenu"
+    routerLink="crud"
+    class="crud"
+    style="cursor: pointer"
+    >Crud</span
+  >
+  <span
+    *ngIf="privateMenu"
+    routerLink="dashboard"
+    class="dashboard"
+    style="cursor: pointer"
+    >Dashboard</span
+  >
+  <span
+    *ngIf="privateMenu"
+    routerLink="galery"
+    class="galery"
+    style="cursor: pointer"
+    >Galery</span
+  >
+  <span
+    *ngIf="privateMenu"
+    routerLink="profile"
+    class="profile"
+    style="cursor: pointer"
+    >Profile</span
+  >
+  <span *ngIf="privateMenu" class="usuario">{{ username }}</span>
+  <span
+    class="logout"
+    *ngIf="privateMenu"
+    type="button"
+    style="cursor: pointer"
+    color="basic"
+    (click)="logout()"
+  >
+    LOGOUT
+  </span>
+</mat-toolbar>
